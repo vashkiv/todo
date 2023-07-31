@@ -1,0 +1,146 @@
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__logo-img{
+        height: 40px;
+    }
+
+    .header__nav-item{
+        font-size: 14px;
+    }
+
+    .header__nav-item:not(:first-child){
+        margin-left: 15px;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .todo-app{
+        margin: 50px auto;
+    }
+
+    .footer__nav-item{
+        font-size: 14px;
+    }
+
+    .footer__logo-img{
+        height: 50px;
+    }
+}
+
+@media (max-width: 575px){
+    .header{
+        position: relative;
+        padding: 10px 0;
+    }
+
+    .header__logo-img{
+        height: 30px;
+    }
+
+    .header__nav-list{
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        z-index: 0;
+        background-color: var(--primary);
+        padding: 15px 10px;
+        transition: .5s;
+        -webkit-border-radius: 0 0 5px 5px;
+        -moz-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .mob_ham{
+        display: block;
+    }
+
+    .mob_ham.active + .header__nav-list{
+        left: 0;
+    }
+
+    .header__nav-item{
+        text-align: center;
+    }
+
+    .header__nav-item:not(:first-child){
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .header__nav-link{
+        padding: 5px 10px;
+    }
+
+    .todo-app{
+        padding: 30px 10px;
+    }
+
+    .todo-app__title{
+        font-size: 24px;
+    }
+
+    .todo-app__task-item:not(:last-child){
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .todo-app__task-desc{
+        font-size: 14px;
+    }
+
+    .todo-app__task-btn-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .todo-app__task-btn{
+        width: 60px;
+    }
+
+    .todo-app__task-btn:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer__content{
+        flex-direction: column-reverse;
+    }
+
+    .footer__logo{
+        margin: 0 0 30px;
+    }
+
+    .todo-app__input,
+    .todo-app__add-btn{
+        padding: 5px;
+    }
+}

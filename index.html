@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="img/logo.svg">
+            </a>
+
+            <nav class="header__nav">
+                <div class="mob_ham" id="mobHam">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="header__nav-list" id="navList">
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Link 1</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Link 2</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Link 3</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Link 4</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Link 5</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Link 6</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<div class="todo-app">
+    <h1 class="todo-app__title">Todo List</h1>
+    <div class="todo-app__input-container">
+        <input type="text" id="taskInput" class="todo-app__input" placeholder="Enter task...">
+        <button id="addTaskBtn" class="todo-app__add-btn">Add Task</button>
+    </div>
+    <ul class="todo-app__task-list" id="taskList">
+        <li class="todo-app__task-item todo-app__task-item--done">
+            <div class="todo-app__task-desc">asd</div>
+
+            <div class="todo-app__task-btn-group">
+                <button class="todo-app__task-btn todo-app__task-btn--done">Done</button>
+                <button class="todo-app__task-btn todo-app__task-btn--todo">To Do</button>
+                <button class="todo-app__task-btn todo-app__task-btn--delete">Delete</button>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Link 1</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Link 2</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Link 3</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Link 4</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Link 5</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Link 6</a></li>
+                </ul>
+            </nav>
+            <div class="footer__logo">
+                <img class="footer__logo-img" src="img/logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
