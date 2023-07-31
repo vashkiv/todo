@@ -1,6 +1,3 @@
-import '../css/main.css';
-import '../css/media.css';
-
 class Task {
     description: string;
     status: string;

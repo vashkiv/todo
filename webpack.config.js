@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const isDevelopment = process.env.NODE_ENV === 'development' ?? true
+const isDevelopment = true;
 
 module.exports = {
     entry: './js/app.ts',
@@ -15,10 +15,13 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
+                generator: {
+                    filename: 'css/[name]-[hash][ext]'
+                },
             },
             {
                 test: /\.html$/i,
-                use: 'html-loader'
+                use: 'html-loader',
             },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
@@ -44,6 +47,5 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/',
     },
 };
